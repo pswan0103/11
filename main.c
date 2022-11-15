@@ -7,7 +7,12 @@ char *proverb="All that glisters is not gold.";
 
 void setPointer(char **q)
 {
-	q=&proverb;
+	char *ptr;
+	ptr=*q;
+	*q=proverb;
+	ptr=proverb;
+	
+	
 }
 
 int main(int argc, char *argv[]) {
